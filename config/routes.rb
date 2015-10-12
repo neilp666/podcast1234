@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+
+  get 'podcast' => 'pages#podcast'
+
   root 'pages#home'
 
   # The priority is based upon order of creation: first created -> highest priority.

@@ -20,6 +20,7 @@
  @import "bootstrap";
  @import "home";
  @import "normalize";
+ @import "podcasts";
 
  body {
   font-family: "Open Sans", sans-serif;
@@ -68,5 +69,96 @@
    color: $dark;
  }
 
+#main_header {
+  color: $dark;
+  background: $white;
+  padding: 2.5rem 0;
+  #logo {
+      float: left;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: $dark;
+      text-decoration: none;
+  }
+  nav {
+    float: right;
+    ul {
+      list-style: none;
+      margin: 0;
+      li {
+        display: inline;
+        margin-left: 2.5rem;
+        a {
+          color: $dark;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
 
+#banner {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  margin-bottom: 4rem;
+  h1 {
+    text-align: center;
+    color: $white;
+    font-size: 3rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin: 0px;
+    padding: 8rem 0;
+  }
+}
 
+.podcasts_banner {
+  background: url('https://dl.dropboxusercontent.com/s/phrqfxef0c4x69x/river1.jpg');
+}
+
+.sign_in_banner {
+   background: url('https://dl.dropboxusercontent.com/s/phrqfxef0c4x69x/river1.jpg');
+}
+
+.sign_up_banner {
+   background: url('https://dl.dropboxusercontent.com/s/dt4riptzwbe2b4o/paris.jpg');
+}
+    
+.pagination:before, .pagination:after {
+  content: " ";
+  display: table;
+}
+
+.pagination:after {
+  clear: both;
+}
+
+.pagination {
+  text-align: center;
+  margin: 2rem 0 5rem 0;
+  a, .previous_page, .current, .next_page {
+    padding: 0.75rem 1rem;
+    margin: 0 .25rem;
+    border-radius: .15rem;
+    line-height: 1.25;
+    text-decoration: none;
+    font-weight: .7rem;
+    font-style: normal;
+    &:hover {
+      background: $highlight;
+      color: $white;
+    }
+
+  }
+  .current {
+    background: $highlight;
+    color: $white;
+  }
+  .disabled {
+    color: #c0c0c0;
+    &:hover {
+      color: #c0c0c0;
+    }
+  }
+}
