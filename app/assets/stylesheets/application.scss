@@ -12,13 +12,18 @@
  *
  */
 
- $white: FFFFFF;
+ $white: #FFFFFF;
  $highlight: #d2674e;
  $dark: #22292e;
+ @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,300italic,600italic);
  @import "bootstrap-sprockets";
  @import "bootstrap";
  @import "home";
  @import "normalize";
+
+ body {
+  font-family: "Open Sans", sans-serif;
+ }
 
 
  .wrapper_wide {
@@ -35,3 +40,33 @@
   width: 60%;
   margin: 0 auto;
  }
+
+ .cf:before, .cf:after {
+  content: " ";
+  display: table;
+ }
+
+ .cf:after {
+  clear: both;
+ }
+
+ .button {
+  color: $white;
+  text-decoration: none;
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  outline: none;
+  border: none;
+  display: inline-block;
+  min-width: 8.5rem;
+
+ }
+
+ .button_white {
+  background: $white;
+   color: $dark;
+ }
+
+
+
