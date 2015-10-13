@@ -2,6 +2,8 @@ Rails.application.routes.draw do
 
   get 'podcast' => 'pages#podcast'
 
+  get 'episode' => 'pages#episode'
+
   get 'podcasts_show' => 'pages#podcasts_show'
 
   root 'pages#home'

@@ -8,4 +8,7 @@ class PagesController < ApplicationController
   def podcasts_show
   end
 
+  def episode
+  end
+
 end
